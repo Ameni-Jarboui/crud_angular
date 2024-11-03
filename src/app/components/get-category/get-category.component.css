@@ -1,0 +1,100 @@
+/* Base styles for the page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+  }
+  
+  /* Styling for buttons with more modern aesthetics */
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .btn-new {
+    background-color: #5cb85c; /* Softer green */
+    color: white;
+  }
+  
+  .btn-update {
+    background-color: #5bc0de; /* Soft blue */
+    color: white;
+  }
+  
+  .btn-delete {
+    background-color: #d9534f; /* Soft red */
+    color: white;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  
+  /* Enhancements for table visuals */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
+  
+  tr:hover {
+    background-color: #ddd; /* Add hover effect for rows */
+  }
+  
+  /* Responsive Design Enhancements */
+  @media screen and (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+      width: 100%;
+    }
+  
+    thead {
+      display: none; /* Hide the header row on small screens */
+    }
+  
+    td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+    }
+  
+    td:before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      width: 50%;
+      padding-right: 10px;
+      text-align: left;
+      font-weight: bold;
+      color: #007bff;
+    }
+  }
+  
+  /* Adjustments for action buttons within the table for small screens */
+  @media screen and (max-width: 768px) {
+    .btn-update, .btn-delete {
+      margin-top: 5px;
+      width: 90%;
+    }
+  }
+  

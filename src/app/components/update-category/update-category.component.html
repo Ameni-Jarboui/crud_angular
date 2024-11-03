@@ -1,0 +1,14 @@
+<div class="container" *ngIf="updateCategoryForm as form">
+    <div class="form-container">
+        <h2 class="form-title">Update Category</h2>
+        <!-- Now the form is only rendered if updateCategoryForm is defined -->
+        <form [formGroup]="form">
+            <div class="form-group">
+                <label for="name">Name: </label>
+                <input type="text" id="name" formControlName="name" required>
+            </div>
+            
+            <button type="submit" (click)="updateCategory()">Update</button>
+        </form>
+    </div>
+</div>

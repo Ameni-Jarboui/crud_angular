@@ -1,0 +1,68 @@
+/* General container styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height of the viewport */
+    padding: 20px;
+    background-color: #f4f7f6; /* Light background */
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Adjust based on preference */
+}
+
+.form-title {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Form and form elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #606f7b;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccd6dd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Makes sure padding does not affect the overall width */
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #5fa8d3; /* Highlight color when focused */
+}
+
+button[type="submit"] {
+    background-color: #5fa8d3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #4a93c1;
+}

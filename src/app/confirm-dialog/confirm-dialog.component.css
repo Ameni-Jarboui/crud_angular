@@ -1,0 +1,37 @@
+/* Ajoutez ces styles à votre fichier CSS existant */
+
+.mat-dialog-actions {
+    display: flex;
+    
+    margin-top: 20px; /* Ajoute une marge en haut pour l'espacement */
+  }
+
+  
+  .cancel {
+    background-color: rgb(197, 63, 63); /* Couleur de fond pour le bouton Annuler */
+    color: #fff;
+    justify-content: right;
+    font-size: 18px; 
+    padding: 5px 10px; 
+    margin: 0 10px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    padding: 10px 20px; 
+  }
+  
+  .confirm {
+    background-color: #23c976; /* Couleur de fond pour le bouton Confirmer */
+    color: #fff;
+    justify-content: left;
+    font-size: 18px; 
+    padding: 5px 10px;  
+    margin: 0 10px;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    padding: 10px 20px; 
+  }
+  
